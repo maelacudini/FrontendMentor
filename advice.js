@@ -1,7 +1,7 @@
 // script.js
 function getAdvice() {
     fetch('https://api.adviceslip.com/advice')
-        .then(response => response.json()) // Parse response as JSON
+        .then(response => response.json())
         .then(data => {
             const adviceText = data.slip.advice;
             const adviceElement = document.getElementById('adviceText');

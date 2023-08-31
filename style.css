@@ -1,0 +1,39 @@
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+  padding: 0px !important;
+  margin: 0px !important;
+  font-family: "Manrope", sans-serif;
+}
+
+.card {
+  background-color: hsl(217, 19%, 24%) !important;
+  border-radius: 10px !important;
+  max-width: 450px;
+  height: 100%;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  color: hsl(150, 100%, 66%);
+  margin-bottom: 15px;
+}
+
+.quote {
+  color: hsl(193, 38%, 86%);
+  margin-bottom: 20px !important;
+}
+
+.btn {
+  background-color: hsl(150, 100%, 66%) !important;
+  height: 50px;
+  width: 50px;
+  border-radius: 100% !important;
+  margin-top: 20px;
+  margin-bottom: -40px;
+}
