@@ -1,0 +1,30 @@
+body {
+  background-color: hsl(212, 45%, 89%) !important;
+  font-family: "Outfit", sans-serif !important;
+}
+
+.card {
+  border: none !important;
+  border-radius: 20px !important;
+  min-width: 300px !important;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.192);
+}
+
+.card-img-top {
+  border-radius: 10px !important;
+}
+
+.title {
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 15px;
+  color: hsl(220, 15%, 55%);
+  font-weight: 400;
+}
+
+.card-body {
+  text-align: center;
+}
