@@ -6,8 +6,7 @@ const Home = ({ mode }) => {
   //fetch data
   const apiFields =
     "https://restcountries.com/v3.1/all?fields=name,flags,capital,population,region,languages,subregion,currencies";
-  const apiUrl = "https://restcountries.com/v3.1/all";
-  const fields = "name,flags,capital,population,region,languages,subregion";
+
   const { data, loading, error } = useFetch(apiFields);
 
   //set regions to filter by
@@ -91,7 +90,7 @@ const Home = ({ mode }) => {
       </div>
 
       <div className="mt-5">
-        <Countries mode={mode} filteredData={filteredData} />
+        <Countries mode={mode} filteredData={filteredData} data={data} />
       </div>
     </main>
   );
