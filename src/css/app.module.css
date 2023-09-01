@@ -1,0 +1,42 @@
+/*main */
+.main {
+  padding: 24px;
+}
+
+/*filter*/
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*cards*/
+.countries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cardCountriesLight {
+  flex-grow: 1;
+  flex-basis: 250px;
+  background-color: hsl(0, 0%, 98%) !important;
+  border: none !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.128);
+}
+
+.cardCountriesDark {
+  flex-grow: 1;
+  flex-basis: 250px;
+  background-color: hsl(209, 23%, 22%) !important;
+  color: white !important;
+}
+
+/*modal*/
+.modalLight {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.modalDark {
+  background-color: hsl(207, 26%, 17%);
+}
