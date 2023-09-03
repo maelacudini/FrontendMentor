@@ -12,5 +12,7 @@ function getAdvice() {
         });
 }
 
+getAdvice()
+
 const fetchButton = document.getElementById('fetchButton');
 fetchButton.addEventListener('click', getAdvice);
