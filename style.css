@@ -1,0 +1,114 @@
+body {
+  font-family: "League Spartan", sans-serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 700 !important;
+}
+
+h5 {
+  font-weight: 700 !important;
+}
+
+p {
+  color: hsl(0, 0%, 63%);
+  font-size: 12px !important;
+}
+
+.letters {
+  letter-spacing: 10px;
+}
+
+.navbar {
+  z-index: 100;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.navlink {
+  color: white !important;
+}
+
+.navbar-brand {
+  font-size: 30px !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:active {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  display: none;
+}
+
+.main {
+  z-index: 1;
+}
+
+.desc {
+  position: relative;
+  padding: 50px !important;
+}
+
+.arrows {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0 !important;
+}
+
+@media screen and (max-width: 992px) {
+  .letters {
+    margin-bottom: 0 !important;
+  }
+  .arrows {
+    top: -70px;
+    right: 0px;
+    left: auto;
+  }
+}
+
+.btn {
+  background-color: black !important;
+  border-radius: 0 !important;
+  width: 70px;
+  height: 70px;
+  margin: 0 !important;
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 63%) !important;
+}
+
+.custom-link:hover {
+  color: hsl(0, 0%, 63%) !important;
+}
+
+.custom-link {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
