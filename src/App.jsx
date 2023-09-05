@@ -16,9 +16,9 @@ const App = () => {
       <Cart />
       <hr />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/" element={<Women />} />
+        <Route exact path="/home" element={<Home />} />
         <Route exact path="/collections" element={<Collections />} />
-        <Route exact path="/women" element={<Women />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -112,3 +112,7 @@ small {
 input {
   background-color: hsl(223, 64%, 98%) !important;
 }
+
+hr {
+  display: none !important;
+}

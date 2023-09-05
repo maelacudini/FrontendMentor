@@ -4,7 +4,6 @@ import { useDispatch } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
 import Collection from "./Collection";
 import { useState } from "react";
-import cart from "../assets/icon-cart.svg";
 
 const Collections = () => {
   const dispatch = useDispatch();
@@ -93,12 +92,7 @@ const Collections = () => {
           </button>
           <Collection item={item} />
           <button className="btn button" onClick={() => addToCart(item)}>
-            <img
-              style={{ borderRadius: 0 }}
-              src={cart}
-              alt="cart"
-              className="me-2 mb-1"
-            />
+            <i class="bi bi-bag me-2"></i>
             Add to Cart
           </button>
         </div>

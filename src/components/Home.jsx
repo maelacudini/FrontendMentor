@@ -1,5 +1,4 @@
 import style from "./css/app.module.css";
-import cart from "../assets/icon-cart.svg";
 
 const Home = () => {
   return (
@@ -29,7 +28,7 @@ const Home = () => {
               voluptatem!
             </p>
             <button className="btn button d-flex align-items-center">
-              <img src={cart} alt="cart" className="me-2" />
+              <i class="bi bi-bag me-2"></i>
               Start shopping
             </button>
           </div>

@@ -1,17 +1,15 @@
-import image from "../assets/image-product-1.jpg";
-import image2 from "../assets/image-product-2.jpg";
-import image3 from "../assets/image-product-3.jpg";
-import image4 from "../assets/image-product-4.jpg";
-import img from "../assets/image-product-1-thumbnail.jpg";
-import img2 from "../assets/image-product-2-thumbnail.jpg";
-import img3 from "../assets/image-product-3-thumbnail.jpg";
-import img4 from "../assets/image-product-4-thumbnail.jpg";
 import style from "./css/app.module.css";
 import { useState } from "react";
-import cart from "../assets/icon-cart.svg";
 
 const Women = () => {
-  const [selectedImage, setSelectedImage] = useState(image);
+  const imageUrls = [
+    "https://images.unsplash.com/photo-1603808033596-5d1fa1629eae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80",
+    "https://images.unsplash.com/photo-1603808033176-9d134e6f2c74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80",
+    "https://images.unsplash.com/photo-1603808033587-935942847de4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2012&q=80",
+    "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2030&q=80",
+  ];
+
+  const [selectedImage, setSelectedImage] = useState(imageUrls[0]);
 
   const handleThumbnailClick = (newImage) => {
     setSelectedImage(newImage);
@@ -47,37 +45,21 @@ const Women = () => {
                 src={selectedImage}
                 alt="img"
                 width={"100%"}
-                height={"auto"}
+                height={"500px"}
+                style={{ objectFit: "cover" }}
               />
               <div className="w-100 d-flex justify-content-between mt-4">
-                <img
-                  onClick={() => handleThumbnailClick(image)}
-                  src={img}
-                  alt="img"
-                  width={"23%"}
-                  height={"23%"}
-                />
-                <img
-                  onClick={() => handleThumbnailClick(image2)}
-                  src={img2}
-                  alt="img"
-                  width={"23%"}
-                  height={"23%"}
-                />
-                <img
-                  onClick={() => handleThumbnailClick(image3)}
-                  src={img3}
-                  alt="img"
-                  width={"23%"}
-                  height={"23%"}
-                />
-                <img
-                  onClick={() => handleThumbnailClick(image4)}
-                  src={img4}
-                  alt="img"
-                  width={"23%"}
-                  height={"23%"}
-                />
+                {imageUrls.map((imageUrl, index) => (
+                  <img
+                    key={index}
+                    onClick={() => handleThumbnailClick(imageUrl)}
+                    src={imageUrl}
+                    alt={`Thumbnail ${index + 1}`}
+                    width={"23%"}
+                    height={"200px"}
+                    style={{ objectFit: "cover" }}
+                  />
+                ))}
               </div>
             </div>
           </div>
@@ -91,37 +73,21 @@ const Women = () => {
             src={selectedImage}
             alt="img"
             width={"100%"}
-            height={"auto"}
+            height={"500px"}
+            style={{ objectFit: "cover" }}
           />
           <div className="w-100 d-flex justify-content-between mt-4">
-            <img
-              onClick={() => handleThumbnailClick(image)}
-              src={img}
-              alt="img"
-              width={"23%"}
-              height={"23%"}
-            />
-            <img
-              onClick={() => handleThumbnailClick(image2)}
-              src={img2}
-              alt="img"
-              width={"23%"}
-              height={"23%"}
-            />
-            <img
-              onClick={() => handleThumbnailClick(image3)}
-              src={img3}
-              alt="img"
-              width={"23%"}
-              height={"23%"}
-            />
-            <img
-              onClick={() => handleThumbnailClick(image4)}
-              src={img4}
-              alt="img"
-              width={"23%"}
-              height={"23%"}
-            />
+            {imageUrls.map((imageUrl, index) => (
+              <img
+                key={index}
+                onClick={() => handleThumbnailClick(imageUrl)}
+                src={imageUrl}
+                alt={`Thumbnail ${index + 1}`}
+                width={"23%"}
+                height={"200px"}
+                style={{ objectFit: "cover" }}
+              />
+            ))}
           </div>
         </div>
         <div className="col-lg-6 p-5 d-flex justify-content-center align-items-center">
@@ -155,12 +121,7 @@ const Women = () => {
               </div>
 
               <button className="button btn ms-3">
-                <img
-                  style={{ borderRadius: "0" }}
-                  src={cart}
-                  alt="cart"
-                  className="me-2 mb-1"
-                />
+                <i class="bi bi-bag me-2"></i>
                 Add to cart
               </button>
             </div>

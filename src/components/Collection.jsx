@@ -3,7 +3,6 @@ import { addItem } from "../actions/cart";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import style from "./css/app.module.css";
-import cart from "../assets/icon-cart.svg";
 
 const Collection = ({ item }) => {
   const dispatch = useDispatch();
@@ -98,7 +97,7 @@ const Collection = ({ item }) => {
                 className="btn button d-flex align-items-center"
                 onClick={addToCart}
               >
-                <img src={cart} alt="cart" className="me-2" />
+                <i class="bi bi-bag me-2"></i>
                 Add to cart
               </button>
             </div>
