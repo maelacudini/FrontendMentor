@@ -1,0 +1,136 @@
+.navbar-toggler {
+  outline: none !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:active {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif !important;
+  padding: 30px;
+  cursor: url("./images/favicon-32x32.png"), auto !important;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-weight: 700 !important;
+}
+
+small {
+  color: hsl(26, 100%, 55%);
+  font-weight: 700 !important;
+}
+
+.navbar-brand {
+  font-size: 30px !important;
+  font-weight: 700 !important;
+}
+
+.row {
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+.navbar {
+  border-bottom: 1px solid hsl(220, 14%, 90%);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: auto;
+  right: 0px;
+}
+
+.rounded-pill {
+  background-color: hsl(26, 100%, 55%) !important;
+}
+
+.offcanvas {
+  padding: 20px;
+}
+
+a {
+  font-weight: 700 !important;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.discount {
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 16px;
+}
+
+.priceBefore {
+  color: hsl(220, 14%, 75%);
+  text-decoration: line-through;
+}
+
+.input-group-text,
+input {
+  background-color: hsl(223, 64%, 98%) !important;
+  border: none !important;
+  font-weight: 700 !important;
+  height: 41px;
+}
+
+.input-group {
+  max-width: 120px !important;
+}
+
+.btn {
+  color: white !important;
+  background-color: hsl(26, 100%, 55%) !important;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: hsl(26, 100%, 75%) !important;
+}
+
+.imgthumb:hover,
+.imgthumb:focus {
+  border: 2px solid hsl(26, 100%, 55%);
+  filter: opacity(0.5);
+}
+
+.cartmodal {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.secondCol {
+  padding: 0px 70px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .secondCol {
+    padding: 50px 50px 0px 50px !important;
+  }
+}

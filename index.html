@@ -1,18 +1,140 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Manrope:wght@800&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>eCommerce</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Manrope:wght@800&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:wght@400;700&family=Rubik:wght@400;500;700&display=swap');
+</style>
+<body>
+
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container-fluid d-flex align-items-center p-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <img class="me-3" src="./images/icon-menu.svg" alt="menu" height="15px" style="border-radius: 0;">
+            </button>
+            <a class="navbar-brand me-auto pe-3">sneakers</a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <img data-bs-dismiss="offcanvas" aria-label="Close" class="me-3" src="./images/icon-close.svg" alt="menu" height="15px">
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav mt-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal2" class="nav-link active position-relative" aria-current="page" href="#">
+                        <img src="./images/icon-cart.svg" alt="cart" height="20px" style="border-radius: 0;">
+                        <span class="position-absolute top-10 start-80 translate-middle badge rounded-pill">
+                            1
+                            <span class="visually-hidden">Items in the cart</span>
+                        </span>
+                    </a>            
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pe-0" href="#"><img src="./images/image-avatar.png" alt="avatar" height="40px"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="modal fade cartmodal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content" style="border: none;">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-between align-items-center">
+                <img id="mainImage" data-bs-toggle="modal" data-bs-target="#exampleModal" src="./images/image-product-1.jpg" alt="1" height="50px" width="50px" style="object-fit: cover; object-position: center;">
+                <div>
+                    <p class="m-0">Fall Limited Edition Sneakers</p>
+                    <div class="d-flex">
+                        <p class="m-0">$125.00&nbsp; x3</p><span><b> &nbsp; $375.00</b></span>
+                    </div>
+                </div>
+                <img src="./images/icon-delete.svg" alt="delete" width="20px" height="20px" style="border-radius: 0;">
+            </div>
+            <div class="modal-footer" style="border: none;">
+              <button type="button" class="btn">Checkout</button>
+            </div>
+          </div>
+        </div>
+    </div>          
+
+
+    <div class="row">
+        <div class="col-lg-6">
+            <img id="mainImage" data-bs-toggle="modal" data-bs-target="#exampleModal" src="./images/image-product-1.jpg" alt="1" height="500px" width="100%" style="object-fit: cover; object-position: center;">
+            <div class="d-flex justify-content-between mt-3">
+                <img id="imgThumb1" class="imgthumb" src="./images/image-product-1.jpg" alt="1" height="23%" width="23%" style="object-fit: cover; object-position: center;" onclick="setImage(1);">
+                <img id="imgThumb2" class="imgthumb" src="./images/image-product-2.jpg" alt="1" height="23%" width="23%" style="object-fit: cover; object-position: center;" onclick="setImage(2);">
+                <img id="imgThumb3" class="imgthumb" src="./images/image-product-3.jpg" alt="1" height="23%" width="23%" style="object-fit: cover; object-position: center;" onclick="setImage(3);">
+                <img id="imgThumb4" class="imgthumb" src="./images/image-product-4.jpg" alt="1" height="23%" width="23%" style="object-fit: cover; object-position: center;" onclick="setImage(4);">
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content" style="background-color: transparent; border: none;">
+                    <div class="modal-header" style="border: none;">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="mainImageModal" data-bs-toggle="modal" data-bs-target="#exampleModal" src="./images/image-product-1.jpg" alt="1" height="500px" width="100%" style="object-fit: cover; object-position: center;">
+                        <div class="d-flex justify-content-between mt-3">
+                            <img id="imgThumb1" class="imgthumb" src="./images/image-product-1.jpg" alt="1" height="23%" width="23%" style="object-fit: cover; object-position: center;" onclick="setImage(1);">
+                            <img id="imgThumb2" class="imgthumb" src="./images/image-product-2.jpg" alt="1" height="23%" width="23%" style="object-fit: cover; object-position: center;" onclick="setImage(2);">
+                            <img id="imgThumb3" class="imgthumb" src="./images/image-product-3.jpg" alt="1" height="23%" width="23%" style="object-fit: cover; object-position: center;" onclick="setImage(3);">
+                            <img id="imgThumb4" class="imgthumb" src="./images/image-product-4.jpg" alt="1" height="23%" width="23%" style="object-fit: cover; object-position: center;" onclick="setImage(4);">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center secondCol">
+            <div>
+                <small>SNEAKER COMPANY</small>
+                <h1 class="mb-5 mt-3">Fall Limited Edition Sneakers</h1>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum at obcaecati vitae veritatis repellat, dolores optio quos eius repellendus eos! Totam nemo commodi aperiam ut quod aspernatur, maxime obcaecati?</p>
+                <h3 class="d-flex align-items-center">$125.00 <span class="discount">50%</span></h3>
+                <small class="priceBefore">$250.00</small>
+
+                <div class="mt-4 d-flex justify-content-between align-items-center">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1"><img src="./images/icon-minus.svg" alt="-"></span>
+                        <input type="text" class="form-control text-center" placeholder="0" aria-label="number" aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon2"><img src="./images/icon-plus.svg" alt="+"></span>
+                    </div>
+                    <button class="btn"><img src="./images/icon-cart white.svg" alt="cart" class="me-3 mb-1" style="border-radius: 0;">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
