@@ -112,3 +112,8 @@
   background-color: hsl(180, 29%, 50%);
   padding-top: 12px;
 }
+
+.details {
+  color: hsl(180, 8%, 52%);
+  margin-right: 10px;
+}

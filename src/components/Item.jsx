@@ -13,11 +13,13 @@ const Item = ({ item }) => {
         {item.featured && (
           <small className={style.pillFeatured}>FEATURED</small>
         )}
-        <div>
-          <h6 className="mb-0">{item.position}</h6>
-          <small>{item.postedAt}</small>
-          <small>{item.contract}</small>
-          <small>{item.location}</small>
+        <div style={{ marginTop: "5px" }}>
+          <h6 style={{ marginBottom: "5px" }}>
+            <b>{item.position}</b>
+          </h6>
+          <small className={style.details}>{item.postedAt}</small>
+          <small className={style.details}>{item.contract}</small>
+          <small className={style.details}>{item.location}</small>
         </div>
       </div>
 
