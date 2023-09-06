@@ -4,7 +4,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import style from "./css/app.module.css";
 import Items from "./components/Items";
 import { Fragment, useEffect, useState } from "react";
-import header from "../images/bg-header-desktop.svg";
+import header from "./images/bg-header-desktop.svg";
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -15,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:3000/data")
+    fetch("../data.json")
       .then((response) => response.json())
       .then((jsonData) => {
         setLoading(false);
