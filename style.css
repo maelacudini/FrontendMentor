@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Manrope:wght@800&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,700;1,400;1,800&family=Roboto:wght@400;700&family=Rubik:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Hanken Grotesk", sans-serif !important;
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+  }
+}
+
+p,
+h4 {
+  font-weight: 700 !important;
+  margin: 0 !important;
+}
+
+.row {
+  box-shadow: 0 10px 30px hsla(241, 81%, 54%, 0.2);
+  border-radius: 30px !important;
+  max-width: 700px !important;
+}
+
+.card {
+  background: linear-gradient(
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  ) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(241, 100%, 89%) !important;
+  padding: 5%;
+  border-radius: 30px !important;
+}
+
+.circle {
+  background: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  ) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  padding: 5%;
+  border-radius: 100%;
+}
+
+.number {
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.title {
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+.cardWhite {
+  padding: 5% !important;
+}
+
+.summaryContainer:nth-child(2) {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.1);
+  padding: 20px 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.summaryTitle {
+  padding-left: 10px;
+}
+
+.score {
+  color: hsl(224, 30%, 27%);
+}
+
+.summaryContainer:nth-child(3) {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.1);
+  padding: 20px 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.summaryContainer:nth-child(4) {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.1);
+  padding: 20px 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.summaryContainer:nth-child(5) {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.1);
+  padding: 20px 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button {
+  background-color: hsl(224, 30%, 27%) !important;
+  color: white !important;
+  border-radius: 30px !important;
+  padding: 15px !important;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    border-radius: 0px 0px 50px 50px !important;
+    width: 100%;
+  }
+
+  .cardWhite {
+    padding: 50px !important;
+  }
+
+  .summaryContainer {
+    margin-bottom: 20px !important;
+  }
+
+  .row {
+    max-width: none;
+  }
+}
