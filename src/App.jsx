@@ -4,17 +4,17 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import style from "./css/app.module.css";
 import Items from "./components/Items";
 import { Fragment, useState } from "react";
-import header from "./images/bg-header-desktop.svg";
-import logo1 from "./images/photosnap.svg";
-import logo2 from "./images/manage.svg";
-import logo3 from "./images/account.svg";
-import logo4 from "./images/myhome.svg";
-import logo5 from "./images/loop-studios.svg";
-import logo6 from "./images/faceit.svg";
-import logo7 from "./images/shortly.svg";
-import logo8 from "./images/insure.svg";
-import logo9 from "./images/eyecam-co.svg";
-import logo10 from "./images/the-air-filter-company.svg";
+import header from "/bg-header-desktop.svg";
+import logo1 from "/photosnap.svg";
+import logo2 from "/manage.svg";
+import logo3 from "/account.svg";
+import logo4 from "/myhome.svg";
+import logo5 from "/loop-studios.svg";
+import logo6 from "/faceit.svg";
+import logo7 from "/shortly.svg";
+import logo8 from "/insure.svg";
+import logo9 from "/eyecam-co.svg";
+import logo10 from "/the-air-filter-company.svg";
 
 const App = () => {
   const jsonData = {
@@ -227,7 +227,7 @@ const App = () => {
             filterData(e.target.value);
           }}
         />
-        <div className={`${style.tags}`}>
+        <div className="mt-3">
           {selectedKeywords.map((keyword, index) => (
             <div
               key={index}
