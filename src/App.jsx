@@ -15,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("../data.json")
+    fetch("data.json")
       .then((response) => response.json())
       .then((jsonData) => {
         setLoading(false);
