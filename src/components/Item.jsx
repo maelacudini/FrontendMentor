@@ -7,7 +7,7 @@ const Item = ({ item }) => {
         <img src={item.logo} alt="logo" width={"70px"} height={"70px"} />
       </div>
 
-      <div className={`col-md-6 ${style.header}`}>
+      <div className={`col-md-5 ${style.header}`}>
         <small className={style.company}>{item.company}</small>
         {item.new && <small className={style.pillNew}>NEW</small>}
         {item.featured && (
@@ -23,7 +23,7 @@ const Item = ({ item }) => {
         </div>
       </div>
 
-      <div className={`col-md-4 ${style.tags}`}>
+      <div className={`col-md-5 ${style.languages}`}>
         {item.languages.map((language, index) => (
           <span key={index} className={style.language}>
             {language}

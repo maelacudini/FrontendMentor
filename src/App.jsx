@@ -31,7 +31,7 @@ const App = () => {
         postedAt: "1d ago",
         contract: "Full Time",
         location: "USA Only",
-        languages: ["HTML", "CSS", "JavaScript"],
+        languages: ["Frontend", "Senior", "HTML", "CSS", "JavaScript"],
         tools: [],
       },
       {
@@ -46,7 +46,7 @@ const App = () => {
         postedAt: "1d ago",
         contract: "Part Time",
         location: "Remote",
-        languages: ["Python"],
+        languages: ["Fullstack", "Midweight", "Python", "React"],
         tools: ["React"],
       },
       {
@@ -62,7 +62,7 @@ const App = () => {
         contract: "Part Time",
         location: "USA Only",
         languages: ["JavaScript"],
-        tools: ["React", "Sass"],
+        tools: ["Frontend", "Junior", "React", "Sass", "Javascript"],
       },
       {
         id: 4,
@@ -76,7 +76,7 @@ const App = () => {
         postedAt: "5d ago",
         contract: "Contract",
         location: "USA Only",
-        languages: ["CSS", "JavaScript"],
+        languages: ["Frontend", "Junior", "CSS", "JavaScript"],
         tools: [],
       },
       {
@@ -92,7 +92,7 @@ const App = () => {
         contract: "Full Time",
         location: "Worldwide",
         languages: ["JavaScript"],
-        tools: ["Ruby", "Sass"],
+        tools: ["Fullstack", "Midweight", "Javscript", "Ruby", "Sass"],
       },
       {
         id: 6,
@@ -107,7 +107,7 @@ const App = () => {
         contract: "Full Time",
         location: "UK Only",
         languages: ["Ruby"],
-        tools: ["RoR"],
+        tools: ["Backend", "Junior", "Ruby", "RoR"],
       },
       {
         id: 7,
@@ -122,7 +122,7 @@ const App = () => {
         contract: "Full Time",
         location: "Worldwide",
         languages: ["HTML", "JavaScript"],
-        tools: ["Sass"],
+        tools: ["Frontend", "Junior", "Vue", "Javascript", "Sass"],
       },
       {
         id: 8,
@@ -152,7 +152,7 @@ const App = () => {
         contract: "Full Time",
         location: "Worldwide",
         languages: ["JavaScript", "Python"],
-        tools: ["Django"],
+        tools: ["Fullstack", "Midweight", "Javascript", "Django", "Python"],
       },
       {
         id: 10,
@@ -167,7 +167,7 @@ const App = () => {
         contract: "Part Time",
         location: "Worldwide",
         languages: ["JavaScript"],
-        tools: ["React", "Sass"],
+        tools: ["Frontend", "Junior", "React", "Sass", "JavaScript"],
       },
     ],
   };
@@ -227,7 +227,7 @@ const App = () => {
             filterData(e.target.value);
           }}
         />
-        <div className="mt-3">
+        <div className={style.tags}>
           {selectedKeywords.map((keyword, index) => (
             <div
               key={index}
