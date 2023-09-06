@@ -25,3 +25,4 @@ function setImage(id) {
     // Update the src attribute of the mainImage
     mainImage.src = newSrc;
 }
+
