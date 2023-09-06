@@ -1,0 +1,114 @@
+.items {
+  padding: 50px;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 5px 10px hsl(180, 31%, 85%);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px !important;
+}
+
+.card:nth-child(1),
+.card:nth-child(2) {
+  border-left: 3px solid hsl(180, 29%, 50%);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.company {
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.pillNew,
+.pillFeatured {
+  padding: 5px 5px 2px 5px;
+  border-radius: 50px;
+  color: white;
+  margin-right: 10px;
+}
+
+.pillNew {
+  background-color: hsl(180, 29%, 50%);
+}
+
+.pillFeatured {
+  background-color: hsl(180, 14%, 20%);
+}
+
+.language {
+  font-weight: 700;
+  padding: 5px 5px 2px 5px;
+  border-radius: 5px;
+  color: hsl(180, 29%, 50%);
+  margin-right: 10px;
+  background-color: hsl(180, 31%, 95%);
+}
+
+.tags {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .logo {
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    padding: 0;
+  }
+
+  .header {
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  .tags {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top: 1px solid hsla(180, 14%, 20%, 0.1);
+    padding: 20px 0 0 0;
+    margin-top: 14px;
+  }
+}
+
+.filter {
+  margin: 50px 40px 0 40px;
+}
+
+.filter > input {
+  border: none !important;
+  box-shadow: 0 5px 10px hsl(180, 31%, 85%);
+}
+
+.filter > input::placeholder {
+  color: hsl(180, 31%, 85%);
+}
+
+.tag > span {
+  border: none !important;
+}
+
+.textTag {
+  background-color: hsla(180, 29%, 50%, 0.2);
+  padding-top: 10px;
+}
+
+.deleteTag {
+  background-color: hsl(180, 29%, 50%);
+  padding-top: 12px;
+}
