@@ -19,12 +19,20 @@ button {
   letter-spacing: 5px !important;
 }
 
+button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
 .row {
   margin-top: 60px !important;
 }
 
 .inside {
   margin-top: 25px !important;
+}
+
+.nav-link {
+  margin-left: 20px !important;
 }
 
 .navbar-toggler,
