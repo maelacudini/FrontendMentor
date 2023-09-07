@@ -1,0 +1,118 @@
+body {
+  padding: 25px !important;
+  font-family: "Inter", sans-serif !important;
+}
+
+p {
+  margin: 0 !important;
+  color: hsl(236, 13%, 42%) !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+}
+
+button {
+  background-color: hsl(5, 85%, 63%);
+  padding: 10px;
+  color: white;
+  border: none;
+  margin-top: 30px !important;
+  letter-spacing: 5px !important;
+}
+
+.row {
+  margin-top: 60px !important;
+}
+
+.inside {
+  margin-top: 25px !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.megaTitle {
+  font-size: 45px;
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+  line-height: 47px;
+}
+
+.blue {
+  background-color: hsl(240, 100%, 5%);
+  padding: 20px !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.new {
+  color: hsl(35, 77%, 62%) !important;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.descBlue {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid hsla(36, 100%, 99%, 0.2);
+  color: white !important;
+}
+
+.descBlue > h5 {
+  font-weight: 700;
+}
+
+.descBlue:nth-child(4) {
+  border: none;
+}
+
+.descSmall {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.number {
+  padding-left: 20px !important;
+  color: hsl(233, 8%, 79%);
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+
+.bottom > h5 {
+  color: hsl(240, 100%, 5%);
+  font-weight: 800;
+  font-size: 18px !important;
+}
+
+@media screen and (min-width: 992px) {
+  .offcanvas-body {
+    margin-left: auto !important;
+  }
+
+  body {
+    padding: 50px 80px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .blue {
+    margin-top: 50px !important;
+  }
+
+  .smallArticle {
+    margin-top: 25px !important;
+  }
+}
